@@ -1,0 +1,28 @@
+#!/bin/bash -e
+
+#
+# If the "/etc/config/shipper-backend" assemble script is executed with the "-h" flag, print one usage.
+#
+if [[ "$1" == "-h" ]]; then
+  exec /usr/libexec/s2i/usage
+fi
+
+echo "Before assembling"
+env
+
+pushd /tmp/src
+
+make node=cloud build
+rc=$?
+
+make dest=/opt/app-root install
+
+if [ $rc -eq 0 ]; then
+  echo "After successful assembling"
+else
+  echo "After failed assembling"
+fi
+
+popd
+
+exit $rc

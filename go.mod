@@ -1,3 +1,3 @@
-module github.com/sclorg/golang-ex
+module finemart/shipper-backend
 
-go 1.11
+go 1.18
