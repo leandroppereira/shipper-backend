@@ -10,7 +10,7 @@ import (
 var shippers = map[string]model.Shipper{
 	"0001": {
 		ShipperID:   "0001",
-		CompanyName: "ParcelLite",
+		CompanyName: "ParcelLite - novo",
 		Phone:       "+1-407-555-0111",
 	},
 }
