@@ -3,4 +3,10 @@
 echo "Before running"
 env
 
+
+# ALTERAÇÃO (exigência da questão):
+# Definição da variável de ambiente SERVER_PORT em tempo de execução
+export SERVER_PORT=8081
+
 exec /opt/app-root/gobinary
+
