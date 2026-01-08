@@ -8,5 +8,8 @@ env
 # Definição da variável de ambiente SERVER_PORT em tempo de execução
 export SERVER_PORT=8081
 
+
+echo "ASSEMBLE"
+
 exec /opt/app-root/gobinary
 
