@@ -22,7 +22,7 @@ func main() {
 	}
 
 	addr := ":" + port
-	log.Printf("s2i - shipper-backend listening on %s", addr)
+	log.Printf("s2i v2 - shipper-backend listening on %s", addr)
 
 	srv := &http.Server{
 		Addr:    addr,
