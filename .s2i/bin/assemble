@@ -10,7 +10,7 @@ fi
 # ALTERAÇÃO (exigência da questão):
 # Definição da variável de ambiente SERVER_PORT via script S2I
 
-export SERVER_PORT=8081
+#export SERVER_PORT=8081
 
 echo "Before assembling"
 env
