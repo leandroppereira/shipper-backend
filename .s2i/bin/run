@@ -6,7 +6,7 @@ env
 
 # ALTERAÇÃO (exigência da questão):
 # Definição da variável de ambiente SERVER_PORT em tempo de execução
-#export SERVER_PORT=8081
+export SERVER_PORT=8081
 
 
 echo "ASSEMBLE"
